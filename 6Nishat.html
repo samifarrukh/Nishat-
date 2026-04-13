@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="bg-black h-8  flex  items-center justify-center font-light text-sm  text-white">
+        <p>New Collection, New Wardrobe — The Bloom Affair Just Dropped Shop Now</p>
+    </div>
+    <nav id="navbar" class=" fixed w-full top-8  left-0 z-50 bg-transparent">
+
+        <div class=" flex md:h-16 lg:h-20 items-center  justify-between py-2 px-8">
+
+            <div>
+                <ul class=" flex gap-6 items-center ">
+                    <li><a class="text-sm font-semibold" href="">WOMEN</a></li>
+                    <li><a class="text-sm font-semibold" href="">LUXURY</a></li>
+                    <li><a class="text-sm font-semibold" href="">MEN</a></li>
+                    <li><a class="text-sm font-semibold" href="">ACCESSORIES</a></li>
+
+                </ul>
+            </div>
+            <div>
+                <img class=" mr-30 md:w-30 lg:w-36 " src="final_logo_1_nishat-golden.webp" alt="">
+            </div>
+
+            <div>
+                <ul class=" flex gap-6 items-center ">
+                    <i class="fa-regular  text-xl  fa-user"></i>
+                    <i class="fa-solid  text-xl fa-magnifying-glass"></i>
+                    <i class="fa-solid text-xl  fa-bag-shopping"></i>
+                </ul>
+            </div>
+        </div>
+        <hr class="text-gray-400 mb-5 hidden ">
+    </nav>
+
+    <div class="relative h-screen overflow-hidden">
+
+        <img class="absolute h-full w-full object-cover  slide opacity-100 transition-opacity duration-700 "
+            src="web.webp" alt="">
+        <img class="absolute h-full w-full object-cover slide opacity-0  transition-opacity duration-700 "
+            src="Change_the_pose_4k_202602091104_-_Accessories_f70a6916-90bf-4af9-8ebe-f31f9331d9d7.webp" alt="">
+        <img class="absolute h-full w-full object-cover slide opacity-0 transition-opacity duration-700 "
+            src="img3.webp" alt="">
+        <img class="absolute h-full w-full object-cover slide opacity-0 transition-opacity duration-700 "
+            src="img4.webp" alt="">
+        <img class="absolute h-full w-full object-cover  slide opacity-0 transition-opacity duration-700"
+            src="img5.webp" alt="">
+        <img class="absolute h-full w-full object-cover slide opacity-0 transition-opacity duration-700 "
+            src="img6.webp" alt="">
+        <img class="absolute h-full w-full object-cover slide opacity-0 transition-opacity duration-700 "
+            src="img7.webp" alt="">
+
+
+
+        <!-- dark overlay -->
+
+
+        <div class="relative top-180 z-10 text-white flex justify-between   ">
+            <!-- circle background video -->
+
+            <div>
+                <h1 class="  ml-4   text-center font-[Roboto] font-semibold text-5xl">
+                    New Arrive
+                </h1>
+            </div>
+
+
+            <div class="flex  gap-4">
+                <div class=" text-sm flex   items-center gap-12 px-6 py-3 rounded-full ">
+                    <i id="left" class="fa-solid text-2xl fa-angle-left"></i>
+                    <i id="right" class="fa-solid text-2xl fa-angle-right"></i>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <main class="mt-40 mb-20">
+        <div class="flex justify-center text-4xl font-semibold text-black">
+            <h1> Women Best Sellers Summer 2026</h1>
+        </div>
+        <div class="flex justify-center mt-13 gap-10">
+            <button id="low" class="bg-amber-200 p-4 rounded-xl">Low ➡️ Hight</button>
+            <button id="high" class="bg-amber-200 p-4 rounded-xl">Hight ➡️ Low</button>
+            <button id="reset" class="bg-amber-200 p-4 rounded-xl">Reset</button>
+        </div>
+        <div class="flex fade opacity-0 translate-y-10 duration-1000 transition-normal justify-center mt-20 items-center">
+            <div id="grids" class="grid grid-cols-2 md:grid-cols-4 gap-5 p-2">
+               
+
+            </div>
+        </div>
+        <div class="flex mt-20  justify-center text-4xl font-semibold text-black">
+            <h1> Men Best Sellers Summer 2026</h1>
+        </div>
+   <div class="flex justify-center mt-13 gap-10">
+            <button id="low2" class="bg-amber-200 p-4 rounded-xl">Low ➡️ Hight</button>
+            <button id="high2" class="bg-amber-200 p-4 rounded-xl">Hight ➡️ Low</button>
+            <button id="reset2" class="bg-amber-200 p-4 rounded-xl">Reset</button>
+        </div>
+
+        <div class="flex justify-center fade opacity-0 translate-y-10 duration-1000 transition-normal  mt-20 items-center">
+            <div  id="grids2" class="grid grid-cols-2 md:grid-cols-4 fade opacity-0 translate-y-10 duration-1000 transition-normal gap-5 p-2">
+                
+            </div>
+        </div>
+
+        <div class="flex mt-20 px-20 justify-between    text-black">
+            <div class="flex flex-col space-y-3  items-center justify-center">
+                <i class="fa-regular text-3xl fa-truck"></i>
+                <span class=" text-gray-700 text-sm">ORDER TRACKING</span>
+            </div>
+
+            <div class="flex flex-col space-y-3 items-center justify-center">
+                <i class="fa-solid text-3xl fa-location-dot"></i>
+                <span class=" text-gray-700 text-sm">STORE LOCATOR</span>
+            </div>
+
+
+            <div class="flex flex-col space-y-3 items-center justify-center">
+                <i class="fa-regular text-3xl fa-comment-dots"></i>
+                <span class=" text-gray-700 text-sm">SUPPORT 24/7</span>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="flex justify-evenly px-4 h-90 items-center text-gray-500 ">
+            <div>
+                <ul class="flex mt-20 flex-col space-y-7">
+                    <li><a class="font-semibold " href="">CONTACT US</a></li>
+                    <li><a href="">21 Km Ferozpur Road Lahore Pakistan.</a></li>
+                    <li><a href="">nishatonline@nishatmills.com</a></li>
+                    <li><a href="">+92 42 111 647 428</a></li>
+                    <div class="flex mt-6 mb-4 gap-3">
+                        <i class="fa-brands text-xl fa-facebook"></i>
+                        <i class="fa-brands text-xl fa-instagram"></i>
+                        <i class="fa-brands text-xl fa-youtube"></i>
+                    </div>
+                </ul>
+            </div>
+            <div>
+                <ul class="flex flex-col space-y-2">
+                    <h1 class="font-semibold mb-4 " href="">INFORMATION</h1>
+                    <li><a href="">Blogs.</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Catalogues</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="flex flex-col space-y-2">
+                    <h1 class="font-semibold mb-4 " href="">CUSTOMER SERVICES</h1>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Order Tracking</a></li>
+                    <li><a href="">Store Locator</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Return & Exchange Policy</a></li>
+                </ul>
+            </div>
+            <div class="flex flex-col md:w-50 lg:w-70 space-y-5">
+
+                <h1 class="font-semibold mb-4 " href="Newsletter">NEWSLETTER</h1>
+                <P>Sign up to our newsletter to receive exclusive offers.</P>
+                <input class=" p-2 outline outline-gray-500" type="text" placeholder="E-mail">
+                <button class="bg-black rounded-xl text-white p-2 w-30">SUBSCRIBE</button>
+            </div>
+        </div>
+        <div class="flex px-4 justify-between mt-3">
+            <div>
+                <p class="text-gray-500">© 2026 - NISHAT</p>
+            </div>
+            <div class=" flex  gap-10 ">
+                <img class="w-10" src="visa.svg" alt="">
+                <img class="w-10" src="mastercard.svg" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    let left = document.getElementById('left');
+    let right = document.getElementById('right');
+    let slide = document.querySelectorAll('.slide');
+    let index = 0;
+    function showslide1(i) {
+        slide.forEach(sl => {
+            sl.classList.add('opacity-0');
+            sl.classList.remove('opacity-100')
+        });
+        slide[i].classList.remove('opacity-0');
+        slide[i].classList.add('opacity-100');
+    }
+    function next() {
+        index++;
+        if (index >= slide.length) {
+            index = 0;
+        }
+        showslide1(index);
+    }
+    right.addEventListener('click', next);
+    function pre() {
+        if (index <= 0) index = slide.length;
+        index--;
+        showslide1(index);
+    }
+    left.addEventListener('click', pre);
+    let inta = setInterval(() => {
+        next();
+    }, 3000);
+
+    let fade = document.querySelectorAll('.fade');
+    function showslide() {
+        fade.forEach(el => {
+            let top = el.getBoundingClientRect().top;
+            let windohei = window.innerHeight;
+            if (top < windohei) {
+                el.classList.remove('opacity-0', 'translate-y-10');
+                el.classList.add('opacity-100', 'translate-y-0');
+            }
+        });
+    }
+    showslide();
+    window.addEventListener('scroll', showslide);
+
+    let navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > window.innerHeight - 100) {
+            navbar.classList.remove('bg-transparent', 'text-white', 'top-8');
+            navbar.classList.add('bg-white', 'text-black', 'shadow-md', "top-0");
+        } else {
+            navbar.classList.remove('bg-white', 'text-black', 'shadow-md', 'top-0');
+            navbar.classList.add('bg-transparent', 'text-white', 'top-8');
+        }
+    });
+
+    let grid = document.getElementById('grids');
+    let low = document.getElementById('low');
+    let high = document.getElementById('high');
+    let resete = document.getElementById('reset');
+
+    let grid2 = document.getElementById('grids2');
+     let low2 = document.getElementById('low2');
+    let high2 = document.getElementById('high2');
+    let resete2 = document.getElementById('reset2')
+
+    let product = [
+        { price: 5990, img: "suti1.webp" },
+        { price: 5990, img: "suit2.webp" },
+        { price: 7990, img: "suit3.webp" },
+        { price: 5990, img: "suit4.webp" },
+        { price: 9990, img: "suit5.webp" },
+        { price: 3990, img: "suit6.webp" },
+        { price: 1990, img: "suit7.webp" },
+        { price: 2990, img: "suit8.webp" },
+        { price: 4990, img: "suit9.webp" },
+        { price: 7990, img: "suit10.webp" },
+        { price: 7990, img: "suit11.webp" },
+        { price: 7190, img: "suit12.webp" }]
+
+          let product1 = [
+        { price: 5990, img: "suit13.webp" },
+        { price: 5990, img: "suit14.webp" },
+        { price: 7990, img: "suit15.webp" },
+        { price: 5990, img: "suit16.webp" },
+        { price: 9990, img: "suit17.webp" },
+        { price: 3990, img: "suit18.webp" },
+        { price: 1990, img: "suit19.webp" },
+        { price: 2990, img: "suit20.webp" },
+        { price: 4990, img: "suit21.webp" },
+        { price: 7990, img: "suit22.webp" },
+        { price: 7990, img: "suit23.webp" },
+        { price: 7190, img: "suit24.webp" }]
+
+        function showproduct (data){
+            grid.innerHTML = '';
+            data.forEach(item => {
+                  grid.innerHTML += `
+            <div class="flex flex-col space-y-1 ">
+                <img class="md:w-60 lg:w-100" src="${item.img}" alt="">
+                    <p class="text-gray-600 [letter-spacing:2px]  text-sm mt-3">3 PIECE - DIGITAL PRINTED</p>
+                    <div class="flex items-center  gap-2">
+                        <span class="font-semibold">UNSTITCHED</span>
+                        <span class="text-[10px]  bg-red-500 p-1 mt-0.5 rounded-sm text-white">NEW IN</span>
+                    </div>
+                    <div class="text-gray-400 [word-spacing:2px]  [letter-spacing:2px] text-sm">
+
+                        <span>RS.</span>
+                        <span>${item.price}</span>
+                    </div>
+            `;
+            });
+          
+        }
+
+
+        showproduct(product);
+
+        function lowtohigh(){
+            let sorted = [...product].sort((a,b) => a.price - b.price);
+            showproduct(sorted);
+        }
+
+        function hightolow(){
+            let sorted = [...product].sort((a,b) => b.price - a.price);
+            showproduct(sorted);
+        }
+        function reset(){
+            showproduct(product);
+        }
+
+        low.addEventListener('click',lowtohigh);
+        high.addEventListener('click',hightolow);
+        resete.addEventListener('click',reset);
+
+
+
+          function showproduct2 (data){
+            grid2.innerHTML = '';
+            data.forEach(item => {
+                  grid2.innerHTML += `
+            <div class="flex flex-col space-y-1 ">
+                <img class="md:w-60 lg:w-100" src="${item.img}" alt="">
+                    <p class="text-gray-600 [letter-spacing:2px]  text-sm mt-3">3 PIECE - DIGITAL PRINTED</p>
+                    <div class="flex items-center  gap-2">
+                        <span class="font-semibold">UNSTITCHED</span>
+                        <span class="text-[10px]  bg-red-500 p-1 mt-0.5 rounded-sm text-white">NEW IN</span>
+                    </div>
+                    <div class="text-gray-400 [word-spacing:2px]  [letter-spacing:2px] text-sm">
+
+                        <span>RS.</span>
+                        <span>${item.price}</span>
+                    </div>
+            `;
+            });
+          
+        }
+
+
+        showproduct2(product1);
+
+        function lowtohigh2(){
+            let sorted = [...product1].sort((a,b) => a.price-b.price);
+            showproduct2(sorted);
+        }
+         
+        function hightolow2(){
+            let sorted = [...product1].sort((a,b) => b.price - a.price);
+            showproduct2(sorted);
+        }
+
+          function reset2 (){
+            showproduct2(product1);
+          }
+
+         low2.addEventListener('click',lowtohigh2);
+         high2.addEventListener('click',hightolow2);
+         resete2.addEventListener('click',reset2);
+
+</script>
+
+</html>
